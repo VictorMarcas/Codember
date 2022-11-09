@@ -720,9 +720,10 @@ eme:pheralb@gmail.com`;
 const bd = ["usr", "eme", "psw", "age", "loc", "fll"];
 
 const createArrayFromString = (string) => {
-  const replaceSpaces = string.split("\n\n");
-  const result = replaceSpaces.map((item) => item.replace(/\s+/g, " "));
-  return result;
+  const replaceSpaces = string
+    .split("\n\n")
+    .map((item) => item.replace(/\s+/g, " "));
+  return replaceSpaces;
 };
 
 const removeSpace = (string) => {
@@ -743,8 +744,8 @@ const createObjectFromString = (string) => {
 
 const inputUsersFilters = (users) => {
   const getCleanUsers = createArrayFromString(users).filter(Boolean);
-  const ArrayObjectUsers = getCleanUsers.map((users) =>
-    createObjectFromString(users)
+  const ArrayObjectUsers = getCleanUsers.map((element) =>
+    createObjectFromString(element)
   );
 
   const result = ArrayObjectUsers.filter((user) => {
@@ -757,7 +758,7 @@ const inputUsersFilters = (users) => {
   return result;
 };
 
-const userValidSize = inputUsersFilters(users).length;
+const validUsersSize = inputUsersFilters(users).length;
 const lastUserValid = inputUsersFilters(users)[userValidSize - 1];
 
-console.log(userValidSize, lastUserValid);
+console.log(validUsersSize, lastUserValid);
