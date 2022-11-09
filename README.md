@@ -3,7 +3,7 @@
 ### ¿Quieres participar en un reto de programación implementando cualquier lenguaje?
 Hay un evento en este mes de noviembre en donde cada martes se habilita un nuevo challenge, también en cada challenge puedes encontrar easter egg
 
-(https://codember.dev/)[https://codember.dev/]
+<a href="https://codember.dev/">Quiero ir a Codember 🎊</a>
 
 Solo tienes que registrarte y seguir las instrucciones.
 
