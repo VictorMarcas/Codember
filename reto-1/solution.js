@@ -759,6 +759,6 @@ const inputUsersFilters = (users) => {
 };
 
 const validUsersSize = inputUsersFilters(users).length;
-const lastUserValid = inputUsersFilters(users)[userValidSize - 1];
+const lastUserValid = inputUsersFilters(users)[validUsersSize - 1];
 
 console.log(validUsersSize, lastUserValid);
